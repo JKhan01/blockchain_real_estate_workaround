@@ -1,0 +1,39 @@
+{
+    "abi":[
+        {
+            "inputs":[],
+            "name":"getUser",
+            "outputs":[
+                {
+                    "internalType":"string",
+                    "name":"","type":"string"
+                },
+                {
+                    "internalType":"string",
+                    "name":"",
+                    "type":"string"
+                }
+                ],
+                "stateMutability":"view",
+                "type":"function"
+        },
+        {
+            "inputs":[
+                {
+                    "internalType":"string",
+                    "name":"name",
+                    "type":"string"
+                },
+                {
+                    "internalType":"string",
+                    "name":"gender",
+                    "type":"string"
+                }],
+                "name":"setUser",
+                "outputs":[],
+                "stateMutability":"nonpayable",
+                "type":"function"
+        }
+    ],
+    "contract_address": "0x13645fdf51B914428034569a018C9236f0EeDE31"
+}

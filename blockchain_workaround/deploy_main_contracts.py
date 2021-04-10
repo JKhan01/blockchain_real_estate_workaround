@@ -4,11 +4,11 @@ import json
 
 w3 = Web3(Web3.HTTPProvider("http://127.0.0.1:8545",request_kwargs={'timeout':60}))
 
-abi_file = open("stringUtils_sol_StringUtils.abi")
+abi_file = open("_user_sol_userRecords.abi")
 abi_list = json.loads((abi_file.read()))
 abi_file.close()
 
-bin_file = open("stringUtils_sol_StringUtils.bin","r")
+bin_file = open("_user_sol_userRecords.bin","r")
 bin_content = bin_file.read()
 bin_file.close()
 
@@ -25,3 +25,6 @@ tx_hash = contract.constructor().transact({"from":w3.eth.accounts[1]})
 tx_receipt = w3.eth.getTransactionReceipt(tx_hash)
 
 print (tx_receipt)
+
+# with open("main_transaction_receipt.json","w") as tx_file:
+#     json.dump(dict(tx_receipt), tx_file, indent=4) 

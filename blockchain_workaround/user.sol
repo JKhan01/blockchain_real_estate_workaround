@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 // import library file
-import "stringUtils.sol";
+import "./stringUtils.sol";
 contract userRecords {
   // enum type variable to store user gender
   enum genderType { male, female }
