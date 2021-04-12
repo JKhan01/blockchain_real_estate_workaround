@@ -1,0 +1,209 @@
+[
+    {
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address payable",
+                        "name": "owner_id",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "value",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "buyProperty",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            }
+        ],
+        "contract_address": "0xb7479d3782eD2a397b9067E98712988764601d6C"
+    },
+    {
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address payable",
+                        "name": "owner_id",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "value",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "buyProperty",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            }
+        ],
+        "contract_address": "0xBc04363ce8DB62f6514891203F56C78d5912f886"
+    },
+    {
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address payable",
+                        "name": "owner_id",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "value",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "buyProperty",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            }
+        ],
+        "contract_address": "0xD4767A64c52f303ba398712e8729f53608Be4e31"
+    },
+    {
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address payable",
+                        "name": "owner_id",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "value",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "buyProperty",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            }
+        ],
+        "contract_address": "0xC3852737cFB90F3b2D2f348283ce3F871E6f5CFA"
+    },
+    {
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address payable",
+                        "name": "owner_id",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "value",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "buyProperty",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            }
+        ],
+        "contract_address": "0xFB8cC0fC06F6c6243752f3bAe4aF3e1c5B514FD8"
+    },
+    {
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address payable",
+                        "name": "owner_id",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "value",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "buyProperty",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            }
+        ],
+        "contract_address": "0x7A366103d1806274afbA21c3a5239dd5D40861d9"
+    },
+    {
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address payable",
+                        "name": "owner_id",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "value",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "buyProperty",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            }
+        ],
+        "contract_address": "0xa94bcCFE97Ef79Ba7cD83bE7a8071b591C0706C0"
+    },
+    {
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address payable",
+                        "name": "owner_id",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "value",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "buyProperty",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            }
+        ],
+        "contract_address": "0x0377764c389FF34d671a29D0676F6d16C049BA9C"
+    },
+    {
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address payable",
+                        "name": "owner_id",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "value",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "buyProperty",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            }
+        ],
+        "contract_address": "0x68dB95D8cF5E78aA90e02ac3c37aef92A046EC38"
+    }
+]
