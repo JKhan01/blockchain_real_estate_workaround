@@ -21,6 +21,7 @@ contract userRecords {
   struct properties{
     // user owner;
     address payable owner_id;
+    string prop_name;
     string prop_id;
     string street;
     string district;
@@ -30,7 +31,7 @@ contract userRecords {
     string requester;
     address requester_id;
     bool approved;
-    uint value;
+    string value;
   }
   
   struct user{
@@ -72,8 +73,8 @@ contract userRecords {
     return (user_obj);
   }
 
-  function addProperty(address payable owner_id, string memory prop_id, string memory street, string memory district, string memory state, uint value) public {
-    property_list.push(properties({owner_id: owner_id, prop_id: prop_id, street: street, district: district, state: state, availability: false, requested: false, requester:"", requester_id: owner_id, approved: false, value: value}));
+  function addProperty(address payable owner_id, string memory prop_name,string memory prop_id, string memory street, string memory district, string memory state, string memory value) public {
+    property_list.push(properties({owner_id: owner_id, prop_name:prop_name,prop_id: prop_id, street: street, district: district, state: state, availability: false, requested: false, requester:"", requester_id: owner_id, approved: false, value: value}));
   }
 
   function getProperty() public view returns (properties[] memory) {
@@ -117,6 +118,19 @@ contract userRecords {
     for (i=0; i<property_list.length; i++){
       if (StringUtils.equal(property_list[i].prop_id,prop_id)){
         property_list[i].approved = true;
+        break;
+      }
+    }
+    
+  }
+  function keepProperty(string memory prop_id) public {
+    uint i;
+    for (i=0; i<property_list.length; i++){
+      if (StringUtils.equal(property_list[i].prop_id,prop_id)){
+        property_list[i].approved = false;
+        property_list[i].requested = false;
+        property_list[i].requester = "";
+        property_list[i].requester_id = property_list[i].owner_id;
         break;
       }
     }

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- ============= COMPONENT ============== -->
+<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+         <a class="navbar-brand" href="#">Land Registration and Transaction Portal</a> Welcome {{ data[1] }}
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     <div class="collapse navbar-collapse" id="main_nav">
+       
+   
+       <ul class="navbar-nav ms-auto">
+            <li class="nav-item">UserID: {{ data[0] }} </li>
+            <li class="nav-item"><a class="nav-link" href="/addproperty">Add New Property</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Your Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="/approvedproperty">Purchase Approved Properties</a></li>
+            <li class="nav-item"><a class="nav-link" href="/viewproperty">View Other Properties</a></li>   
+           <li class="nav-item"><a class="nav-link" href="/logout"> Logout </a></li>
+           
+           <!-- <li class="nav-item dropdown">
+               <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Dropdown right </a>
+               <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                 <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+               </ul>
+           </li> -->
+       </ul>
+   
+     </div> <!-- navbar-collapse.// -->
+    </div> <!-- container-fluid.// -->
+   </nav>
+   <!-- ============= COMPONENT END// ============== -->
+   
+   
+   
+   <div class="container" style="max-width: 720px">
+   
+   <header class="py-4">
+       <h2>Your Registered Properties.<h2>
+         
+   </header> <!-- section-header.// -->
+   
+   <section>
+        {% if data[2] == 0 %}
+            <h3>
+                Sorry No Properties to display
+            </h3>
+        {% else %}
+        {% for i in data[3] %}
+        <div style="width: 100%; border: 0,0,3px,0; border-style:double;">
+            <div style="width: 40%; float: left;">
+                Property : {{ i[1] }}
+            </div>
+            <div style="width: 60%; float: left;">
+                <ul>
+                    <li>Located: {{ i[3] }}, {{ i[4] }}, {{ i[5] }}</li>
+                    <li> Price: {{ i[11] }}</li>
+                    {% if i[6] == false and i[7]== false %}
+                    <li><a class="btn btn-info" href="/setproperty/{{ i[2] }}"> Make Available for sale</a></li>
+                    
+                    {% else %}
+                    <li> Land already set for sale</li>
+                    {% endif %}
+                    {% if i[7] == true %}
+                    <li>Property requested by: {{ i[8] }} {% if i[10] == false %}<span><a class="btn btn-success" href="/sellproperty/{{ i[2] }}">Approve</a> </span>{% endif %} <span> <a class="btn btn-warning" href="/keepproperty/{{ i[2] }}">Reject</a> </span></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        <br>
+        {% endfor %}
+        {% endif %}
+           
+   </section>
+   
+   
+   </div>
+{% endblock %}

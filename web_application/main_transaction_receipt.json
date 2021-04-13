@@ -1,0 +1,279 @@
+{
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "owner_id",
+                    "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "prop_name",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "prop_id",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "street",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "district",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "value",
+                    "type": "string"
+                }
+            ],
+            "name": "addProperty",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "owner_id",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                }
+            ],
+            "name": "buyProperty",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getProperty",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address payable",
+                            "name": "owner_id",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "prop_name",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "prop_id",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "street",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "district",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "state",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "availability",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "requested",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "requester",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "requester_id",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "approved",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "value",
+                            "type": "string"
+                        }
+                    ],
+                    "internalType": "struct userRecords.properties[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getUser",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address payable",
+                            "name": "user_id",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "name",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "aadhar_number",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "pan_number",
+                            "type": "string"
+                        }
+                    ],
+                    "internalType": "struct userRecords.user[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "prop_id",
+                    "type": "string"
+                }
+            ],
+            "name": "keepProperty",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "requester_id",
+                    "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "prop_id",
+                    "type": "string"
+                }
+            ],
+            "name": "requestProperty",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "prop_id",
+                    "type": "string"
+                }
+            ],
+            "name": "sellProperty",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "prop_id",
+                    "type": "string"
+                }
+            ],
+            "name": "setProperty",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "user_id",
+                    "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "aadhar_number",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "pan_number",
+                    "type": "string"
+                }
+            ],
+            "name": "setUser",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "prop_id",
+                    "type": "string"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "buyer",
+                    "type": "address"
+                }
+            ],
+            "name": "updateProperty",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "contract_address": "0xAC89e945Dfb41be8c07CeEFA38c26DDA6462aDA2"
+}

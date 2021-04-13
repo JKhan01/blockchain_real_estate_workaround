@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- ============= COMPONENT ============== -->
+<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+         <a class="navbar-brand" href="#">Land Registration and Transaction Portal</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     <div class="collapse navbar-collapse" id="main_nav">
+       
+   
+       <ul class="navbar-nav ms-auto">
+           <li class="nav-item"><a class="nav-link" href="/login"> Login </a></li>
+           <li class="nav-item"><a class="nav-link" href="/signup"> Signup </a></li>
+           <!-- <li class="nav-item dropdown">
+               <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Dropdown right </a>
+               <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                 <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+               </ul>
+           </li> -->
+       </ul>
+   
+     </div> <!-- navbar-collapse.// -->
+    </div> <!-- container-fluid.// -->
+   </nav>
+   <div class="container" style="max-width: 720px">
+    <form method="POST" action="/procsignup">
+        <div class="form-group">
+          <label for="user_name">Citizen Name</label>
+          <input type="text" name="name" class="form-control form-control-lg" id="user_name"  placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="aadhar">Aadhar Card Number</label>
+            <input type="text" name="aadhar" class="form-control form-control-lg" id="aadhar"  placeholder="Enter Your 12 digit Aadhar Number" pattern="\d{12}">
+          </div>
+          <div class="form-group">
+            <label for="pan">PAN Card Number</label>
+            <input type="text" name="pan" class="form-control form-control-lg" id="pan"  placeholder="Enter Your PAN Number" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
+          </div>
+        <small  class="form-text text-muted">This ID was generated at time of Registartion. <a href="/signup"> Click Here</a> If not registered.</small>
+          <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+{% endblock %}
