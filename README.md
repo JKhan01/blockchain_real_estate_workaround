@@ -1,6 +1,8 @@
 # blockchain_real_estate_workaround
 Repository for blockchain based real estate transactional workaround using Ganache, Solidity and Python3.
 
+## The documentation of solidity and web3 was extensively referred for this project development. With time these documentations are updated. Do prefer the latest documentation and modules for project to work effectively if this project breaks.
+
 ## The development was done on Python 3.6
 ## The project was tested on Python 3.6
 
